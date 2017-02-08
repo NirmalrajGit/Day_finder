@@ -1,0 +1,8 @@
+import calendar 
+list1 = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY','SUNDAY']
+n = [int(n) for n in input('').split()]
+day = n[1]
+month = n[0]
+year = n[2]
+b = calendar.weekday(year, month, day)
+print (list1[b])
